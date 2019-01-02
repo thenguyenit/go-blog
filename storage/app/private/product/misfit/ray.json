@@ -1,0 +1,22 @@
+{
+  "created_at": "2016-02-20 00:00:00",
+  "price": "550.000",
+  "shipping-free": true,
+  "gallery": {
+    "0": "misfit/ray.jpg",
+    "7": "misfit/ray0.jpg",
+    "2": "misfit/ray1.jpg",
+    "1": "misfit/ray2.jpeg",
+    "6": "misfit/ray3.jpeg",
+    "3": "misfit/ray4.jpeg",
+    "4": "misfit/ray5.jpg",
+    "5": "misfit/ray6.jpg"
+  },
+  "video": {
+    "1": "https://www.youtube.com/watch?v=ibMV-E-PjgM"
+  },
+  "resource-title": "Misfit",
+  "resource-link": "https://misfit.com/products/misfit-ray?color=galaxy-and-white&band=white-sport-band",
+  "keywords": "Misfit, Ray, fitness tracker, activity trackers, sleep monitor",
+  "status": true
+}

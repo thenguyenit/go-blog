@@ -1,0 +1,18 @@
+{
+  "created_at": "2016-02-20 00:00:00",
+  "price": "550.000",
+  "shipping-free": true,
+  "gallery": {
+    "0": "misfit/shine-2.jpg",
+    "2": "misfit/mis2000_2.jpg",
+    "1": "misfit/mis2000_1.jpg",
+    "6": "misfit/MIS2006_main.jpeg",
+    "3": "misfit/MIS2006_1.jpeg",
+    "4": "misfit/MIS2006_2.jpeg",
+    "5": "misfit/MIS2006_5.jpeg"
+  },
+  "resource-title": "Misfit",
+  "resource-link": "https://misfit.com/products/misfit-shine-2?color=carbon-black&band=black-sport-band",
+  "keywords": "Misfit, Shine 2, fitness tracker, activity trackers, sleep monitor",
+  "status": true
+}
