@@ -5,18 +5,16 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/joho/godotenv"
-	"github.com/thenguyenit/go-blog/app/http/request"
+	"github.com/thenguyenit/go-blog/app"
+	"github.com/thenguyenit/go-blog/controller"
 )
 
 func main() {
 	//load bootstrap application
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
+	app.LoadConfiguration()
 
-	request.Handler()
+	//process all the
+	controller.Handler()
 
 	//start listen and serve
 	log.Fatal(http.ListenAndServe(":"+os.Getenv("HTTP_PORT"), nil))
