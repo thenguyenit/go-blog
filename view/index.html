@@ -1,0 +1,24 @@
+{{define "title"}}T-Rex blog{{end}}
+
+{{ define "content" }}
+
+    <div class="row">
+        <div class="box article-container">
+            
+            {{ range .}}
+                <div class="col-lg-12 article">
+                    <h4>
+                        <a class="font-weight-normal text-dark" href="{{.Url}}">{{.Title}}</a>
+                        
+                        <small class="font-italic text-black-50">{{.CreatedAt}}</small>
+                    </h4>
+                    {{if .Excerpt}}
+                    <p class="font-weight-light">{{.Excerpt}}</p>
+                    {{end}}
+                </div>
+                <div class="clearfix"></div>
+            {{ end }}    
+        </div>
+    </div>
+
+{{ end }}

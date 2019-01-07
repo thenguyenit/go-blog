@@ -1,20 +1,20 @@
 package app
 
 import (
-	"fmt"
 	"html/template"
+	"log"
 	"net/http"
 )
 
-func Render(w http.ResponseWriter, layoutName string, templateName string, data interface{}) {
+func Render(w http.ResponseWriter, layoutName string, viewName string, data interface{}) {
 
-	layoutPath := Conf.Template.Path + "/" + templateName
+	layoutPath := Conf.Template.LayoutPath + "/" + layoutName + ".html"
+	viewPath := Conf.Template.Path + "/" + viewName + ".html"
 
-	t, e := template.New(layoutName).ParseFiles(layoutPath)
-	fmt.Println(e)
-	t.Execute(w, data)
+	t, err := template.ParseFiles(layoutPath, viewPath)
+	if err != nil {
+		log.Fatal(err)
+	}
 
-	fmt.Println(data)
-
-	fmt.Fprintf(w, "NTN"+layoutPath)
+	t.ExecuteTemplate(w, layoutName, data)
 }

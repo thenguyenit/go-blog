@@ -1,48 +1,35 @@
 package controller
 
 import (
-	"fmt"
-	"html/template"
 	"net/http"
 
+	"github.com/gorilla/mux"
 	"github.com/thenguyenit/go-blog/app"
 	"github.com/thenguyenit/go-blog/model/article"
 )
 
 func Handler() {
 
-	//call http request handler
-	http.HandleFunc("/", IndexHandler)
-	http.HandleFunc("/about/", AboutHandler)
+	router := mux.NewRouter()
+	router.HandleFunc("/{year:[0-9]+}/{slug}", ArticleDetail)
+	router.HandleFunc("/", IndexHandler)
+	router.HandleFunc("/about-me", AboutHandler)
+
+	http.Handle("/", router)
 }
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
-	// data := article.All()
-	layoutPath := app.Conf.Template.Path + "/" + "index.tmpl"
-
-	t, e := template.New("index.tmpl").ParseFiles(layoutPath)
-	fmt.Println(e)
-	t.Execute(w, article.Article{
-		Excerpt: "Hello 1",
-	})
-
-	// fmt.Println(data)
-
-	app.Render(w, "master.tmpl", "index.tmpl", article.Article{
-		Excerpt: "Hello",
-	})
+	data := article.All()
+	app.Render(w, "default", "index", data)
 }
 
 func AboutHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, r.URL.Path)
-	fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
+	data := article.Load("2016", "about-me")
+	app.Render(w, "default", "detail", data)
 }
 
-// func loadPage(title string) (*Page, error) {
-// 	filename := title + ".txt"
-// 	body, err := ioutil.ReadFile(filename)
-// 	if err != nil {
-// 		return nil, err
-// 	}
-// 	return &Page{Title: title, Body: body}, nil
-// }
+func ArticleDetail(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	data := article.Load(vars["year"], vars["slug"])
+	app.Render(w, "default", "detail", data)
+}

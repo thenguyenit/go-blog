@@ -12,8 +12,13 @@ type TemplateConfiguration struct {
 	LayoutPath string
 }
 
+type ArticleConfiguration struct {
+	Path string
+}
+
 type AppConfiguration struct {
 	Template TemplateConfiguration
+	Article  ArticleConfiguration
 }
 
 var Conf AppConfiguration
@@ -27,5 +32,9 @@ func LoadConfiguration() {
 	Conf.Template = TemplateConfiguration{
 		Path:       os.Getenv("TEMPLATE_PATH"),
 		LayoutPath: os.Getenv("TEMPLATE_PATH") + "/layouts",
+	}
+
+	Conf.Article = ArticleConfiguration{
+		Path: os.Getenv("STORAGE_PATH") + "/app/private/article",
 	}
 }
