@@ -1,6 +1,7 @@
 {
   "title": "A week with Golang",
-  "created_at": "2018-12-20",
+  "avatar": "/article/2018/a-week-with-golang.jpg",
   "excerpt": "Mình tìm hiểu golang một cách tình cờ và thấy vài điều thú vị mà so với PHP ngôn ngữ mà mình kiếm ăn trong vòng 7 năm",
+  "created_at": "2018-12-20",
   "status": true
 }

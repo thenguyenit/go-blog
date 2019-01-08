@@ -6,6 +6,7 @@ import (
 	"net/http"
 )
 
+//Render will render the content to the view and loading the layout
 func Render(w http.ResponseWriter, layoutName string, viewName string, data interface{}) {
 
 	layoutPath := Conf.Template.LayoutPath + "/" + layoutName + ".html"
@@ -15,6 +16,5 @@ func Render(w http.ResponseWriter, layoutName string, viewName string, data inte
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	t.ExecuteTemplate(w, layoutName, data)
 }

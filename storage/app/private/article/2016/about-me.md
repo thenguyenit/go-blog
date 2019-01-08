@@ -2,7 +2,8 @@ My name is Nguyen, I'm a software engineer mainly interested in web development.
  
  My passion builds a lot of beautiful products, from idea to shipping the final. I care about the full stack, consists system architecture, back-end and front-end work.
   
-####SKILLS
+### SKILLS
+
 - 5 years of experience in web development (LAMP stack).
 - 1,5 years of experience in lead team (2 members).
 - 2 years work with Agile/Scrum development process.
@@ -12,9 +13,8 @@ My name is Nguyen, I'm a software engineer mainly interested in web development.
 - Experience in UX/UI on website.
 - Experience in DevOps.
 
-
-###WORD EXPERIENCE
-####Rainbow software - _Senior developer_
+### WORD EXPERIENCE
+#### Rainbow software - _Senior developer_
 _August 2016 - present_
 
 Project: One-Lotto - Purchase lottery tickets online
@@ -27,8 +27,7 @@ Role & Achievement:
 - Setting up continuous integration with Jenkin.
 - Understanding database versioning management process.
 
-<br>
-####Seldat VietNam ​ — ​ _Senior developer_
+#### Seldat VietNam ​ — ​ _Senior developer_
 _March 2015 - August 2016_
 
 Project: Seldat B2B eCommerce
@@ -42,8 +41,7 @@ NoSql).
 - In an effective team, members need to share their commitment together to achieving the common goal.
 - High quality product is high quality team, so need sharing mindset “How to create a good product”.
 
-<br>
-####SSGroup ​ — ​ _Developer_
+#### SSGroup ​ — ​ _Developer_
 _April 2012 - March 2015_
 
 Project:
@@ -60,15 +58,13 @@ Role & Achievement:
 - Understanding responsibility of technical team with a product, there are: quality, load capacity, tracking
 healthy of product.
 
-<br>
-####EDUCATION
-######SaiGon Technology University ​ — ​ _Bachelor_
+### EDUCATION
+#### SaiGon Technology University ​ — ​ _Bachelor_
 _Oct 2007 - Nov 2011_
 
 Specialization: Information technology
 
-<br>
-####WORKED WITH
+### WORKED WITH
 
 **Back-end:** ​ LAMP, Laravel, Zend , ​ Magento, Restful, PHP-Unit
 
@@ -80,12 +76,11 @@ Specialization: Information technology
 
 **Other:** ​ GIT, SVN, Bitbucket
 
-<br>
-####CONTACT
+
+#### CONTACT
 
 If you want to contact or hire me for your project, you can reach me via:
 
 * Email: [ntnguyenit@gmail.com](mailto:ntnguyenit@gmail.com)
 * Phone: (+84)932 147 503
 * Messenger: [to_thenguyen](https://www.messenger.com/t/thenguyenit)
-
