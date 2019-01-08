@@ -63,10 +63,16 @@ File structure
 * [russross/blackfriday](https://github.com/russross/blackfriday): Using to parse from markdown to HTML
 * [joho/godotenv](github.com/joho/godotenv): Using for reading .env
   
-### Clone
+### Clone and Install the dependency packages
 
 ```
 go get github.com/thenguyenit/go-blog
+```
+
+```
+go get github.com/gorilla/mux
+go get github.com/russross/blackfriday
+go get github.com/joho/godotenv
 ```
 Will download, compile the resource into your $GOPATH directory.
 
@@ -75,6 +81,7 @@ Will download, compile the resource into your $GOPATH directory.
 ```
 cd ~/go/src/github.com/thenguyenit/go-blog
 ```
+
 - Run the web with `go run`
 ```
 go run main.go
